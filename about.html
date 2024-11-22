@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amina's about</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="black-bg"></div>
+  <nav class="navbar-wrapper">
+    <div class="nav-bg-black"></div>
+    <div class="nav-content">
+      <div class="nav-logo">
+        <img src="assets/amina-logo.jpeg" alt="logo" width="70" height="50" />
+        <p class="logo-text">Solutions</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./work.html">Work</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <img src="assets/menu.png" alt="menu" class="menu-icon" width="24" height="24" id="menu-icon"
+        onclick="toggleMobileNav()" />
+
+    </div>
+  </nav>
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./work.html">Work</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="about-section">
+    <div class="about-left about-left-md-hide">
+      <img src="assets/amina-img.jpeg" alt="amina" width="510" height="700" />
+    </div>
+    <div class="about-right">
+      <div>
+        <h1>About Me</h1>
+        <h6>Hello there! My name is <b>Amina Arooj</b></h6>
+        <p>
+          I am a professional software engineer with 5 years of experience in
+          the industry. I have worked with various technologies and
+          programming languages. I have a passion for designing and developing
+          software applications that can help people in their daily lives. I
+          am always looking for new challenges and opportunities to learn and
+          grow as a professional.
+        </p>
+      </div>
+
+      <div class="about-left about-left-md-show">
+        <img src="assets/amina-img.jpeg" alt="amina" width="510" height="700" />
+      </div>
+
+
+      <div class="edu-section">
+        <h1>My Education</h1>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Degree</th>
+                <th>Institute</th>
+                <th>Year</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BS Computer Science</td>
+                <td>FAST University</td>
+                <td>2015-2019</td>
+                <td>3.5 GPA</td>
+              </tr>
+              <tr>
+                <td>Intermediate</td>
+                <td>Govt College</td>
+                <td>2013-2015</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>Matriculation</td>
+                <td>Govt School</td>
+                <td>2011-2013</td>
+                <td>90%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a class="about-btn"
+          href="https://file-examples.com/storage/fe83e1f11c664c2259506f1/2017/10/file-sample_150kB.pdf" target="_blank"
+          download>Download CV</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="assets/logo-no-bg.png" alt="logo" width="50" height="50" />
+          <p class="logo-text">Solutions</p>
+        </div>
+        <div class="footer-center">
+          <ul class="footer-links">
+
+            <li><a
+                href="https://www.fiverr.com/?show_join=true&utm_medium=shared&utm_source=app&utm_campaign=referral_program_app&utm_term=gkLX8Y">
+                <img src="assets/fiverr.png" alt="fiverr" width="20" height="20" />
+              </a></li>
+
+            <li><a href="https://github.com/">
+                <img src="assets/github.svg" alt="github" width="20" height="20" />
+              </a></li>
+
+            <li><a href="https://www.instagram.com/aminaarooj823?igsh=YnBxbXZtaXlpMmg4">
+                <img src="assets/insta.png" alt="instagram" width="20" height="20" />
+              </a></li>
+            <li><a href="https://wa.link/vxiqxn">
+                <img src="assets/whatsapp.png" alt="whatsapp" width="20" height="20" />
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Amina Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById("mobile-nav");
+      if (mobileNav.style.display === "block") {
+        mobileNav.style.display = "none";
+      } else {
+        mobileNav.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>
